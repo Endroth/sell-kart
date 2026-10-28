@@ -1,0 +1,60 @@
+
+menu:
+  title: "&8KartSell &7- &fVender itens"
+  rows: 6
+  sell-all-slot: 49
+  info-slot: 4
+
+messages:
+  prefix: "&6&lKartSell &8» "
+  no-items: "&cVocê não possui itens vendáveis."
+  sold: "&aVocê vendeu seus itens por &e$%money%&a."
+  no-permission: "&cVocê não tem permissão."
+  vault-missing: "&cVault ou um plugin de economia não está instalado."
+
+# Valores por item. Itens ausentes usam default-price.
+default-price: 1.0
+
+prices:
+  TOTEM_OF_UNDYING: 7000
+  GOLDEN_APPLE: 60
+  GOLDEN_CARROT: 30
+  IRON_INGOT: 15
+  CACTUS: 20
+  BAMBOO: 3
+  NETHERITE_SCRAP: 2800
+  EMERALD: 35
+  GOLD_INGOT: 28
+  DIAMOND: 135
+  BOW: 100
+  CROSSBOW: 100
+
+# Estes itens nunca podem ser vendidos.
+blocked-items:
+  - RAIL
+  - POWERED_RAIL
+  - DETECTOR_RAIL
+  - ACTIVATOR_RAIL
+  - WHITE_CARPET
+  - ORANGE_CARPET
+  - MAGENTA_CARPET
+  - LIGHT_BLUE_CARPET
+  - YELLOW_CARPET
+  - LIME_CARPET
+  - PINK_CARPET
+  - GRAY_CARPET
+  - LIGHT_GRAY_CARPET
+  - CYAN_CARPET
+  - PURPLE_CARPET
+  - BLUE_CARPET
+  - BROWN_CARPET
+  - GREEN_CARPET
+  - RED_CARPET
+  - BLACK_CARPET
+
+# Bônus por encantamento. O preço especial substitui o preço normal.
+enchanted-prices:
+  BOW:
+    FLAME: 12000
+  CROSSBOW:
+    QUICK_CHARGE: 10000
