@@ -1,0 +1,31 @@
+
+name: Build KartSell
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+
+      - name: Compilar plugin
+        run: mvn -B package
+
+      - name: Publicar JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: KartSell
+          path: target/KartSell.jar
+          if-no-files-found: error
