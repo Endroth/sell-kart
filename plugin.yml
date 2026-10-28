@@ -1,0 +1,22 @@
+
+name: KartSell
+version: 1.0.0
+main: br.kart.sell.KartSell
+api-version: '26.2'
+depend: [Vault]
+author: Kart
+description: Menu de venda de itens com economia Vault
+
+commands:
+  sell:
+    description: Abre o menu de venda
+    usage: /sell
+    aliases: [vender]
+
+permissions:
+  kartsell.use:
+    description: Permite usar o comando sell
+    default: true
+  kartsell.admin:
+    description: Permite recarregar os preços
+    default: op
